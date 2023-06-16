@@ -8,7 +8,7 @@
 #define     SI7006_ADDRESS       0x40                                                
 #define     SI7006_MEASURE_RELATIVE_HUMIDITY_NO_HOLD_MASTER_MODE           0xF5               
 #define     SI7006_MEASURE_TEMPERATURE_NO_HOLD_MASTER_MODE                 0xF3               
-#define I2C_NODE DT_NODELABEL(mysensor)
+#define I2C_NODE DT_NODELABEL(temp_hum)
  struct i2c_dt_spec dev_i2c = I2C_DT_SPEC_GET(I2C_NODE);
 
 extern int cTemp;
